@@ -1,0 +1,5 @@
+CREATE OR ALTER PROCEDURE getTour(@tid Varchar(255))
+AS 
+BEGIN 
+SELECT * FROM Tour WHERE tid = @tid
+END

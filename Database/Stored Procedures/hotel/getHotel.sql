@@ -1,0 +1,5 @@
+CREATE OR ALTER PROCEDURE getHotel(@hid Varchar(255))
+AS 
+BEGIN 
+SELECT * FROM Hotel WHERE hid = @hid
+END

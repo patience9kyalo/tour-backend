@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #555;
+        }
+        .details {
+            background: #f9f9f9;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            color: white;
+            background-color: #28A745;
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Booking Confirmation</h1>
+        <p>Dear <%= name %>,</p>
+        <p>Thank you for booking with us! Here are your booking details:</p>
+        <div class="details">
+            <p><strong>Tour Name:</strong> <%= tname %></p>
+            <p><strong>Hotel Name:</strong> <%= hname %></p>
+            <p><strong>Check-In Date:</strong> <%= checkInDate %></p>
+            <p><strong>Check-Out Date:</strong> <%= checkOutDate %></p>
+            <p><strong>Total Price:</strong> $<%= totalPrice %></p>
+        </div>
+        <p>We hope you have a great experience with us. If you have any questions or need further assistance, please do not hesitate to contact us.</p>
+        <p><a href="/" class="button">Go to Dashboard</a></p>
+    </div>
+</body>
+</html>
